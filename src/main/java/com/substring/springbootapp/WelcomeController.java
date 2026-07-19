@@ -25,7 +25,7 @@ public class WelcomeController {
     }
 
     @GetMapping("/users")
-    public ResponseEntity<String>> getusers() {
+    public ResponseEntity<String> users() {
         return ResponseEntity.ok("Name: Substring Technologies, Live: true");
     }
 }
