@@ -13,4 +13,9 @@ public class WelcomeController {
     public ResponseEntity<String> welcome() {
         return ResponseEntity.ok("Welcome to Spring Boot API!");
     }
+
+    @GetMapping
+    public ResponseEntity<String> welcome("/users") {
+        return ResponseEntity.ok("name", "Substring technologies", "Live", "true");
+    }
 }
