@@ -6,7 +6,10 @@ import org.springframework.web.bind.annotation.*;
 @RestController
 @RequestMapping("/api/welcome")
 public class WelcomeController {
-
+    @GetMapping
+    public ResponseEntity<String>welcome(){
+     return ResponseEntity .ok("Welcome Spring Boot!");
+    }
     @GetMapping("/users")
     public ResponseEntity<String> users() {
         return ResponseEntity.ok("Name: Substring Technologies, Live: true");
